@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="myFunction()">Try it</button>
+
+<script type="text/javascript">
+function myFunction() {
+	var maxSeconds = 60;
+    var minSeconds = 0; 
+    setInterval(function(){ 
+      maxSeconds = maxSeconds -1;
+      if (maxSeconds == minSeconds) {
+      	maxSeconds = 60; 
+      }
+      console.log("Value =",maxSeconds);
+    }, 1000);
+}
+</script>
+</body>
+</html>
